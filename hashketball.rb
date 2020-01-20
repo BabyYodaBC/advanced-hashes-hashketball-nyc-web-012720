@@ -229,9 +229,9 @@ def winning_team
   end
   end
   if total_home > total_away
-    game_hash[:home[:team_name]]
+    return game_hash[:home[:team_name]]
   else
-    game_hash[:away[:team_name]]
+    return game_hash[:away[:team_name]]
   end
 end
 
