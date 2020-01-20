@@ -185,17 +185,9 @@ new_hash
 end
 
 def big_shoe_rebounds
-  game_hash.each do |level, team|
-    team.each do |attribute, data|
-      if attribute == :players
-        data.each do |player|
-          big_foot = player[:shoe].max
-            return player[:rebounds]
-        
-        end
-      end
-    end
-  end
+  big_foot = 0 
+  rebounds = 0 
+  
 end
     
     
