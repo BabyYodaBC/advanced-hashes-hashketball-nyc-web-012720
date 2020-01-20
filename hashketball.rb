@@ -238,4 +238,8 @@ end
 def player_with_longest_name
   long_name = 0 
   long_player = ""
+  game_hash.each do |field, team|
+    team[:players]
+    
+  end
 
