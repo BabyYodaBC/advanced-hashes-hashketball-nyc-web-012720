@@ -192,8 +192,10 @@ def big_shoe_rebounds
       if player[:shoe] > big_foot
         big_foot = player[:shoe]
         rebounds = player[:rebounds]
-    
+      end
+    end
   end
+  return rebounds
 end
     
     
