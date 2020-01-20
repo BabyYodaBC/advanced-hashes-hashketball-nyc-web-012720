@@ -189,7 +189,7 @@ def big_shoe_rebounds
     team.each do |attribute, data|
       if attribute == :players
         data.each do |player|
-          return player[:shoe].max
+          big_foot = player[:shoe].max
             return player[:rebounds]
         
         end
