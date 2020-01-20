@@ -221,8 +221,8 @@ def winning_team
     if field == :home
     team[:players].each do |player|
       total_home += player[:points]
-    end
-  else
+      end
+    else
     team[:players].each do |player|
     total_away += player[:points]
   end
