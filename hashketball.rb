@@ -218,9 +218,20 @@ def winning_team
   total_home = 0
   total_away = 0
   game_hash.each do |field, team|
+    if field == :home
     team[:players].each do |player|
-      binding.pry
+      total_home += player[:points]
     end
+  else
+    team[:players].each do |player|
+    total_away += player[:points]
+  end
+  end
+  end
+  if total_home > total_away
+    game_hash[:home[:team_name]]
+  else
+    game_hash[:away[:team_name]]
   end
 end
 
