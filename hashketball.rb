@@ -242,6 +242,7 @@ def player_with_longest_name
     team[:players].each do |player|
       if player[:player_name].length > long_name
         long_name = player[:player_name].length
+        long_player = player[:player_name]
       end
     end
   end
