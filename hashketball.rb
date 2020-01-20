@@ -215,6 +215,12 @@ return mvp
 end
 
 def winning_team
-  
+  total_home = 0
+  total_away = 0
+  game_hash.each do |field, team|
+    team[:players].each do |player|
+      binding.pry
+    end
+  end
 end
 
