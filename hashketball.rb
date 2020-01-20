@@ -237,4 +237,5 @@ end
 
 def player_with_longest_name
   long_name = 0 
+  long_player = ""
 
